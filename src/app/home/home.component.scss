@@ -1,24 +1,86 @@
-.container{
+// .container{
+//   // background-image: url("/assets/images/foirfe.svg");
+//   // background-color: #acd;
+//   // background-repeat: initial;
+//   background-size: 100%;
+//   width: 100%;
+//   height: 100%;
+//   overflow: visible;
+//   scroll-behavior: smooth;
+//   z-index: 1;
+// }
+
+// #intro{
+//   font-size: larger;
+//   font-style: initial;
+//   font-family: 'Segoe UI';
+//   // background-color: rgb(98, 186, 230);
+//   position: absolute;
+//   box-sizing: border-box; 
+//   scroll-padding-top: 10%;
+//   text-align: justify;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   // background-size: cover;
+// }
+
+// .foirfe-logo {
+//   background-image: url("/assets/images/tech-background.jpg");
+//   min-height: 100%;
+// }
+
+.foirfe-msg {
   background-image: url("/assets/images/foirfe.svg");
-  background-color: #acd;
-  // background-repeat: no-repeat;
-  background-size: 50%;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  scroll-behavior: smooth;
+  min-height: 100%;
+  padding-top: 80%;
+  position: absolute;
 }
 
-#intro{
-  font-size: larger;
-  font-style: initial;
-  font-family: 'Segoe UI';
-  // background-color: rgb(98, 186, 230);
-  position: absolute;
-  box-sizing: border-box; 
-  scroll-padding-top: 10%;
+#heading {
+  padding-top: 200%;
 }
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 2%;
+  font-size: 150%;
+  letter-spacing: 10%;
+
+}
+.foirfe-logo, .foirfe-msg {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
+}
+div {
+  display: block;
+  // background-color: ;
+}
+// body, html {
+//   height: 100%;
+//   margin: 0;
+//   font: 400 15px/1.8 "Lato", sans-serif;
+//   color: #777;
+// }
 
 *{
   box-sizing: border-box;
+}
+
+.text {
+  color: #777;
+  background-color:white;
+  text-align:center;
 }

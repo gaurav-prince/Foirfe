@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { bootstrap } from 'bootstrap/dist/js/bootstrap.min.js';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
-
+// import { MDCTextField } from '@material/textfield';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    // MDCTextField
   ],
   providers: [],
   bootstrap: [AppComponent]

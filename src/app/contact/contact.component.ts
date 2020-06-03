@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MDCTextField} from '@material/textfield';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,8 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
   }
 
 }

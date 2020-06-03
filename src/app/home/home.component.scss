@@ -30,11 +30,24 @@
 //   min-height: 100%;
 // }
 
-.foirfe-msg {
+.foirfe-img1,
+.foirfe-img2 {
+  position             : relative;
+  opacity              : 0.7;
+  background-attachment: fixed;
+  background-position  : center;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+}
+
+.foirfe-img1 {
   background-image: url("/assets/images/foirfe.svg");
-  min-height: 100%;
-  padding-top: 80%;
-  position: absolute;
+  min-height      : 100%;
+}
+
+.foirfe-img2 {
+  background-image: url("/assets/images/tech-background.jpg");
+  min-height      : 400px;
 }
 
 #heading {
@@ -42,12 +55,12 @@
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 40%;
-  width: 100%;
+  position  : absolute;
+  left      : 0;
+  top       : 40%;
+  width     : 100%;
   text-align: center;
-  color: #000;
+  color     : #000;
 }
 
 .caption span.border {
@@ -58,16 +71,31 @@
   letter-spacing: 10%;
 
 }
-.foirfe-logo, .foirfe-msg {
-  position: relative;
-  opacity: 0.65;
-  background-position: center;
-  background-size: cover;
+
+.caption span {
+  color         : #000;
+  text-shadow   : 4px 4px 10px #ccc;
+  padding       : 2%;
+  font-size     : 45px;
+  font-weight   : bold;
+  width         : 10rem !important;
+  min-width     : 10rem;
+  max-width     : 10rem;
 }
+
+.foirfe-logo,
+.foirfe-img1 {
+  position           : relative;
+  opacity            : 0.65;
+  background-position: center;
+  background-size    : cover;
+}
+
 div {
-  display: block;
+  display            : block;
   // background-color: ;
 }
+
 // body, html {
 //   height: 100%;
 //   margin: 0;
@@ -75,12 +103,30 @@ div {
 //   color: #777;
 // }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 .text {
-  color: #777;
-  background-color:white;
-  text-align:center;
+  color           : #777;
+  background-color: white;
+  text-align      : center;
+  font-size       : 16px;
+}
+
+.foirfe-text-section {
+  color           : #555;
+  background-color: white;
+  text-align      : center;
+  padding         : 50px 80px;
+  text-align      : justify;
+}
+
+.foirfe-text-section h3 {
+  text-align    : center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font          : 20px "Lato", sans-serif;
+  color         : #111;
+  ;
 }

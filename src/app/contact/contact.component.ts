@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {MDCTextField} from '@material/textfield';
+import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-contact',
@@ -11,8 +19,17 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-    const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
   }
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
 
+  phoneFormControl = new FormControl('', [
+    Validators.required,
+    Validators.pattern('[0-9]*'),
+    Validators.minLength(10)
+  ]);
+
+  matcher = new MyErrorStateMatcher();
 }

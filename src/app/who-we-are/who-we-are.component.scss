@@ -1,0 +1,33 @@
+.bg-img {
+  background-image: url("/assets/images/tech-background.jpg");
+  min-height      : 100%;
+  position             : relative;
+  opacity              : 0.7;
+  background-attachment: fixed;
+  background-position  : center;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+}
+
+.heading-text-section {
+  color           : #555;
+  // background-color: white;
+  text-align      : center;
+  padding-top         : 2%;
+  text-align      : justify;
+  padding-left: 40%;
+  position: relative;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font          : 20px "Lato", sans-serif;
+}
+
+.details {
+  color           : #555;
+  background-color: white;
+  text-align      : center;
+  padding         : 50px 80px;
+  text-align      : justify;
+  font-size: medium;
+  padding-top: 2%;
+}

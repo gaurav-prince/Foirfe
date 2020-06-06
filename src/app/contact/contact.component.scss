@@ -4,7 +4,7 @@ h3{
     text-transform: uppercase;
     font          : 20px "Lato", sans-serif;
     color         : #111;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 .form {
     text-align    : center;
@@ -14,8 +14,30 @@ h3{
 }
 
 .container {
-    background-image: url("/src/assets/images/contact_us.png");
-    // opacity: 70%;
+    background-image: url("/assets/images/bg_contact_us.jpg");
+    min-height      : 150%;
+    position           : relative;
+    // opacity            : 0.65;
+    background-position: left;
+    background-size    : 50%;
+    background-repeat    : no-repeat;
+}
+
+.image {
+    // min-height      : 150%;
     position: absolute;
-    min-height      : 100%;
+    width: 50%;
+    height: 55%;
+    padding-top: 10%;
+}
+.middle {
+    width: 90%;
+    position: relative;
+    padding-left: 50%;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.padding-top {
+    padding-top: 10%;
 }

@@ -8,10 +8,16 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { bootstrap } from 'bootstrap/dist/js/bootstrap.min.js';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { MatInputModule } from '@angular/material/input'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { from } from 'rxjs';
+// MDB Angular Free
+import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 // import { MDCTextField } from '@material/textfield';
 
 @NgModule({
@@ -29,9 +35,18 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    // MDCTextField
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
+ 

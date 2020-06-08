@@ -1,3 +1,4 @@
+@media only screen and (min-width: 768px) {
 .bg-img {
   background-image: url("/assets/images/tech-background.jpg");
   min-height      : 100%;
@@ -15,7 +16,7 @@
   text-align      : center;
   padding-top         : 2%;
   text-align      : justify;
-  padding-left: 40%;
+  // padding-left: 40%;
   position: relative;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -24,7 +25,7 @@
 
 .details {
   color           : #555;
-  background-color: white;
+  // background-color: white;
   text-align      : center;
   padding         : 50px 80px;
   text-align      : justify;
@@ -34,14 +35,74 @@
 
 .icon {
   // min-height: 100%;
-  max-width: 40%;
-  max-height: 40%;
-  // align-items: center;
+  width: 30%;
+  height:100%;
+  align-items: center;
+  padding-left: 6%;
+  padding-top: 5%;
   // display: block;
 }
 
 .box {
   align-items: center;
+  max-width: 100%;
   // padding-left: 5%;
   // padding-left: 12%;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .bg-img {
+    background-image: url("/assets/images/tech-background.jpg");
+    min-height      : 100%;
+    position             : relative;
+    opacity              : 0.7;
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+  }
+  
+  .heading-text-section {
+    color           : #555;
+    // background-color: white;
+    text-align      : center;
+    padding-top         : 2%;
+    text-align      : justify;
+    // padding-left: 40%;
+    position: relative;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font          : 20px "Lato", sans-serif;
+  }
+  
+  .details {
+    color           : #555;
+    // background-color: white;
+    text-align      : center;
+    padding         : 50px 80px;
+    text-align      : justify;
+    font-size: medium;
+    padding-top: 2%;
+  }
+  
+  .icon {
+    // min-height: 100%;
+    width: 100%;
+    // max-width: 30%;
+    height:100%;
+    align-items: center;
+    // padding-left: 6%;
+    // padding-top: 5%;
+    // display: block;
+  }
+  
+  .box {
+    align-items: center;
+    max-width: 25%;
+    // padding-left: 5%;
+    // padding-left: 12%;
+  }
 }

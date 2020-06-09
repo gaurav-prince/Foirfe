@@ -17,9 +17,13 @@ import { MatInputModule } from '@angular/material/input'
 import {MatButtonModule} from '@angular/material/button'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { from } from 'rxjs';
+import { HttpClientModule } from "@angular/common/http";
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 // import { MDCTextField } from '@material/textfield';
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +32,18 @@ import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
     ResourcesComponent,
     ContactComponent,
     WhatWeDoComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatIconModule,
+    MatSidenavModule,
+    // MDCTextField,
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
@@ -51,4 +59,4 @@ import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 export class AppModule {
 
  }
- 
+

@@ -1,47 +1,48 @@
-<body>
-  <div class="toolbar-padding container">
+<div class="toolbar-padding">
+  <div class="container">
     <!-- <img src = '/assets/images/bg_contact_us.jpg' class = "image"/> -->
-    <div class = "col-md-12">
+    <div class="col-md-12">
       <h3>We Would Like To Hear From You</h3>
     </div>
-      <div class="padding-top">
-        <mat-form-field appearance="outline" class="middle">
-          <mat-label>Name</mat-label>
-          <input matInput placeholder="Enter Your Name">
-          <mat-icon matSuffix>face</mat-icon>
-        </mat-form-field>
-      </div>
-      
-      <div>
-        <mat-form-field appearance="outline" class ="middle no-overlap">
-          <mat-label>Mobile Number</mat-label>
-          <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl">
-          <mat-icon matSuffix>phone</mat-icon>
-          <mat-error *ngIf="phoneFormControl.hasError('pattern') || (!phoneFormControl.hasError('required') 
+    <div class="padding-top">
+      <mat-form-field appearance="outline" class="middle">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter Your Name">
+        <mat-icon matSuffix>face</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="outline" class="middle no-overlap">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl">
+        <mat-icon matSuffix>phone</mat-icon>
+        <mat-error *ngIf="phoneFormControl.hasError('pattern') || (!phoneFormControl.hasError('required') 
           && !phoneFormControl.hasError('minLength'))">
-            Please enter a valid phone number
-          </mat-error>
-          <mat-error *ngIf="phoneFormControl.hasError('required')">
-            Phone number is <strong>required</strong>
-          </mat-error>
-        </mat-form-field>
-      </div> 
-      <div>
-        <mat-form-field appearance="outline" class="middle">
-          <mat-label>Email</mat-label>
-          <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-                placeholder="Ex. abc@example.com">
-          <mat-icon matSuffix>account_box</mat-icon>
-          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-            Please enter a valid email address
-          </mat-error>
-          <mat-error *ngIf="emailFormControl.hasError('required')">
-            Email is <strong>required</strong>
-          </mat-error>
-        </mat-form-field>
-      </div>
-      <div class="col-offset-4 submit-button">
-        <button mat-raised-button color="primary">Submit</button>
-      </div>
+          Please enter a valid phone number
+        </mat-error>
+        <mat-error *ngIf="phoneFormControl.hasError('required')">
+          Phone number is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="outline" class="middle">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+          placeholder="Ex. abc@example.com">
+        <mat-icon matSuffix>account_box</mat-icon>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="col-offset-4 submit-button">
+      <button mat-raised-button color="primary">Submit</button>
+    </div>
   </div>
-</body>
+  <app-footer></app-footer>
+</div>

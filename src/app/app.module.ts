@@ -43,7 +43,6 @@ import { FooterComponent } from './footer/footer.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    // MDCTextField,
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,

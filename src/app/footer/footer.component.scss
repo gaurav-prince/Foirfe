@@ -1,9 +1,18 @@
 .page-footer {
-    // position:bott;
     bottom:0px;
-    background-color:pink;
+    background-color: #2d79db;
     width:100%;
-    height: 10rem;
-    padding-top: 10%;
-    // bottom: ;
+    height: 5rem;
+    // padding-top: 10%;
+}
+
+.social-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font          : 20px "Lato", sans-serif;
+}
+
+.text-center {
+    align-items: center;
+    // padding-left: 40%;
 }

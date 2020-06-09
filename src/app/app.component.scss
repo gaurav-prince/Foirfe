@@ -4,17 +4,26 @@
 
 .nav {
     z-index: 1;
+    background-color: #fff;
+    color : rgba(74, 72, 80, 0.575)
 }
 .nav-title a{
     font-size: 22px;
-    color    : #fff;
+    // color    : #fff;
     padding-left: 1rem;
+    letter-spacing: 5px;
+    // text-transform: uppercase;
+    font          : 20px "Algreya", sans-serif;
+    // color         : #111;
+    color : rgba(74, 72, 80, 0.575)
 }
 
 .nav-items a {
     font-size: 16px;
     padding  : 1rem;
-    color    : #fff;
+    text-transform: uppercase;
+    font          : 15px "Lato", sans-serif;
+    color : rgba(74, 72, 80, 0.575)
 }
 
 .nav-title img{

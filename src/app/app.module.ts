@@ -24,6 +24,7 @@ import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
     WavesModule,

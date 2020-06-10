@@ -53,7 +53,7 @@ import { FooterComponent } from './footer/footer.component';
     IconsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, WhatWeDoComponent, WhoWeAreComponent]
 })
 export class AppModule {
 

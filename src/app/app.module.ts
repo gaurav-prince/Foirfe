@@ -18,6 +18,7 @@ import {MatButtonModule} from '@angular/material/button'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { from } from 'rxjs';
 import { HttpClientModule } from "@angular/common/http";
+import { RouterModule, Router } from '@angular/router';
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 // import { MDCTextField } from '@material/textfield';
@@ -40,6 +41,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     MatToolbarModule,
     MatIconModule,
@@ -48,7 +50,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatFormFieldModule,
     MatButtonModule,
     MatTabsModule,
-    FormsModule,
+    RouterModule,
     ReactiveFormsModule,
     WavesModule,
     ButtonsModule,

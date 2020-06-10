@@ -11,22 +11,23 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.toolbar-padding{
-    // padding-top: 64px;
-    height: 100%;
+.toolbar-padding {
+    padding-top: 64px;
+    height     : 100%;
 }
 
-// .mat-toolbar {
-//     position: fixed;
-//     top     : 0;
-// }
-
-a.ff-link:hover{
-    color: #3583a1!important;
+a.ff-link:hover {
+    color          : #3583a1 !important;
     text-decoration: none;
-    font-weight: bold;
+    font-weight    : bold;
 }
 
-.white-text{
-    color:#fff;
+.white-text {
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .toolbar-padding {
+        padding-top: 104px;
+    }
 }

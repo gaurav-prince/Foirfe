@@ -1,11 +1,10 @@
-<!-- title and header goes here -->
 <mat-toolbar color = "primary" role="heading" class="nav">
   <span class="nav-title">
     <img src="/assets/images/foirfe.svg" alt="">
-    <a routerLink="/"  class="ff-link">Foirfe</a>
+    <a routerLink="/"  class="ff-link" (click)="activeLink = ''">Foirfe</a>
   </span>
   <span class="example-spacer"></span>
-  <span>
+  <span *ngIf="!mobile">
     <span class="nav-items">
       <a routerLink="/what"  class="ff-link">What We Do?</a>
     </span>
@@ -20,25 +19,15 @@
     </span>
   </span>
 </mat-toolbar>
-<!-- 
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
-  </mat-drawer>
-</mat-drawer-container> -->
-<!-- 
-<div class="example-sidenav-content">
-  <button type="button" mat-button (click)="drawer.toggle()">
-    Toggle sidenav
-  </button>
-</div> -->
+
+<nav mat-tab-nav-bar mat-stretch-tabs *ngIf="mobile" class="nav-tabs">
+  <a mat-tab-link *ngFor="let link of links"
+     (click)="activeLink = link.link"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="activeLink == link.link" [routerLink]="link.link">
+     {{link.text}}
+     <!-- <mat-icon aria-hidden="false">supervisor_account</mat-icon>
+     <div *ngIf="activeLink == link.link">{{link.text}}</div> -->
+    </a>
+</nav>
 <router-outlet></router-outlet>
-
-<!-- footer goes here -->
-
-<!-- Footer -->
-<!-- Footer -->

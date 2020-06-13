@@ -31,5 +31,7 @@ export class ContactComponent implements OnInit {
     Validators.minLength(10)
   ]);
 
+  occupations: String[] = [ 'Student', 'Professional' ];
+
   matcher = new MyErrorStateMatcher();
 }

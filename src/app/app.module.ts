@@ -13,8 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { bootstrap } from 'bootstrap/dist/js/bootstrap.min.js';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
-import { MatInputModule } from '@angular/material/input'
-import {MatButtonModule} from '@angular/material/button'
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { from } from 'rxjs';
 import { HttpClientModule } from "@angular/common/http";
@@ -48,13 +49,14 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatSidenavModule,
     MatInputModule,
     MatFormFieldModule,
+    MatSelectModule,
     MatButtonModule,
     MatTabsModule,
     RouterModule,
     ReactiveFormsModule,
     WavesModule,
     ButtonsModule,
-    IconsModule
+    IconsModule,
   ],
   providers: [],
   bootstrap: [AppComponent, WhatWeDoComponent, WhoWeAreComponent]

@@ -19,11 +19,20 @@
 
         <div>
           <mat-form-field appearance="outline" class="middle no-overlap">
+            <mat-label>Occupation</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let occupation of occupations" [value]="occupation">
+                {{occupation}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="middle no-overlap">
             <mat-label>Mobile Number</mat-label>
             <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl">
             <mat-icon matSuffix>phone</mat-icon>
-            <mat-error *ngIf="phoneFormControl.hasError('pattern') || (!phoneFormControl.hasError('required') 
-              && !phoneFormControl.hasError('minLength'))">
+            <mat-error *ngIf="phoneFormControl.hasError('pattern') && !phoneFormControl.hasError('minLength')">
               Please enter a valid phone number
             </mat-error>
             <mat-error *ngIf="phoneFormControl.hasError('required')">

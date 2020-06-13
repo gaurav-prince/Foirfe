@@ -11,5 +11,4 @@ export class WhoWeAreComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

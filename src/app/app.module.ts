@@ -16,17 +16,20 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select'
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule, Router } from '@angular/router';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 // import { MDCTextField } from '@material/textfield';
 
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -57,11 +60,13 @@ import {MatTabsModule} from '@angular/material/tabs';
     WavesModule,
     ButtonsModule,
     IconsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent, WhatWeDoComponent, WhoWeAreComponent]
 })
 export class AppModule {
 
- }
+}
 

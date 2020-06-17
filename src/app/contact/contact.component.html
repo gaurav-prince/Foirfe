@@ -12,7 +12,7 @@
         <div class="padding-top">
           <mat-form-field appearance="outline" class="middle">
             <mat-label>Name</mat-label>
-            <input matInput placeholder="Enter Your Name">
+            <input matInput placeholder="Enter Your Name" [(ngModel)]="itemValue.name">
             <mat-icon matSuffix>face</mat-icon>
           </mat-form-field>
         </div>
@@ -20,7 +20,7 @@
         <div>
           <mat-form-field appearance="outline" class="middle no-overlap">
             <mat-label>Occupation</mat-label>
-            <mat-select>
+            <mat-select [(ngModel)]="itemValue.occupation">
               <mat-option *ngFor="let occupation of occupations" [value]="occupation">
                 {{occupation}}
               </mat-option>
@@ -30,7 +30,7 @@
         <div>
           <mat-form-field appearance="outline" class="middle no-overlap">
             <mat-label>Mobile Number</mat-label>
-            <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl">
+            <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl" [(ngModel)]="itemValue.phone">
             <mat-icon matSuffix>phone</mat-icon>
             <mat-error *ngIf="phoneFormControl.hasError('pattern') && !phoneFormControl.hasError('minLength')">
               Please enter a valid phone number
@@ -44,7 +44,7 @@
           <mat-form-field appearance="outline" class="middle">
             <mat-label>Email</mat-label>
             <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-              placeholder="Ex. abc@example.com">
+              placeholder="Ex. abc@example.com" [(ngModel)]="itemValue.email">
             <mat-icon matSuffix>account_box</mat-icon>
             <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
               Please enter a valid email address
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="col-offset-4 submit-button">
-      <button mat-raised-button color="primary" matTooltip="Submit the details">Submit</button>
+      <button mat-raised-button color="primary" matTooltip="Submit the details" (click)="onSubmit()">Submit</button>
     </div>
   </div>
   <app-footer></app-footer>

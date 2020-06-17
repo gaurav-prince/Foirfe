@@ -35,9 +35,6 @@
             <mat-error *ngIf="phoneFormControl.hasError('pattern') && !phoneFormControl.hasError('minLength')">
               Please enter a valid phone number
             </mat-error>
-            <mat-error *ngIf="phoneFormControl.hasError('required')">
-              Phone number is <strong>required</strong>
-            </mat-error>
           </mat-form-field>
         </div>
         <div>

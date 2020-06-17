@@ -26,7 +26,6 @@ export class ContactComponent implements OnInit {
   ]);
 
   phoneFormControl = new FormControl('', [
-    Validators.required,
     Validators.pattern('[0-9]*'),
     Validators.minLength(10)
   ]);

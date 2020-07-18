@@ -23,7 +23,8 @@ export class ContactComponent implements OnInit {
     name:'',
     phone:'',
     email:'',
-    occupation:''
+    occupation:'',
+    query: ''
   };
 
   constructor(public db: AngularFireDatabase) {
@@ -48,6 +49,11 @@ export class ContactComponent implements OnInit {
   phoneFormControl = new FormControl('', [
     Validators.pattern('[0-9]*'),
     Validators.minLength(10)
+  ]);
+
+
+  queryFormControl = new FormControl('', [
+    Validators.maxLength(1000)
   ]);
 
   occupations: String[] = [ 'Student', 'Professional' ];

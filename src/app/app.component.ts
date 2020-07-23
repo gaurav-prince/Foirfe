@@ -16,8 +16,8 @@ export class AppComponent implements OnInit {
     },
     {
       'text': 'About Us',
-      'link': 'who',
-      'icon': 'who'
+      'link': 'about',
+      'icon': 'about'
     },
     {
       'text': 'Resources',
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
       'icon': 'contact'
     }
   ];
-  activeLink = this.links[0].link;
+  activeLink = '';
 
   ngOnInit(): void {
     if (window.screen.width <= 768) { // 768px portrait

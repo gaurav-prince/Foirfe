@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -27,18 +28,31 @@ export class ContactComponent implements OnInit {
     query: ''
   };
 
-  constructor(public db: AngularFireDatabase) {
-    this.items = db.list('items').valueChanges();
+  constructor(public db: AngularFireDatabase, private snackBar: MatSnackBar) {
+    // this.items = db.list('items').valueChanges();
   }
 
   ngOnInit(): void {
   }
 
-  onSubmit():void{
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
+
+  onSubmit(): void {
     // https://foirfe-d2e91.firebaseio.com/.json
     // go to this url to check if data is updated
     console.log(this.itemValue);
-    this.db.list('feedbacks').push({ content: this.itemValue});
+    this.db.list('feedbacks').push({ content: this.itemValue });
+    this.openSnackBar("Your feedback recorded successfully", null)
+    this.itemValue= {
+      name: '',
+      phone: '',
+      email: '',
+      occupation: ''
+    };
   }
 
   emailFormControl = new FormControl('', [

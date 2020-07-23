@@ -20,11 +20,12 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class ContactComponent implements OnInit {
 
   items: Observable<any[]>;
-  itemValue: any = {
-    name: '',
-    phone: '',
-    email: '',
-    occupation: ''
+  itemValue:any={
+    name:'',
+    phone:'',
+    email:'',
+    occupation:'',
+    query: ''
   };
 
   constructor(public db: AngularFireDatabase, private snackBar: MatSnackBar) {
@@ -64,7 +65,12 @@ export class ContactComponent implements OnInit {
     Validators.minLength(10)
   ]);
 
-  occupations: String[] = ['Student', 'Professional'];
+
+  queryFormControl = new FormControl('', [
+    Validators.maxLength(1000)
+  ]);
+
+  occupations: String[] = [ 'Student', 'Professional' ];
 
   matcher = new MyErrorStateMatcher();
 }

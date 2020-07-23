@@ -11,4 +11,7 @@ export class WhoWeAreComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 }

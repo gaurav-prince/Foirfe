@@ -32,7 +32,7 @@
             <mat-label>Mobile Number</mat-label>
             <input matInput placeholder="Enter Your Mobile Number" [formControl]="phoneFormControl" [(ngModel)]="itemValue.phone">
             <mat-icon matSuffix>phone</mat-icon>
-            <mat-error *ngIf="phoneFormControl.hasError('pattern') && !phoneFormControl.hasError('minLength')">
+            <mat-error *ngIf="phoneFormControl.hasError('pattern') || !phoneFormControl.hasError('minLength')">
               Please enter a valid phone number
             </mat-error>
           </mat-form-field>
@@ -48,6 +48,16 @@
             </mat-error>
             <mat-error *ngIf="emailFormControl.hasError('required')">
               Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="middle">
+            <mat-label>Query</mat-label>
+            <mat-hint>Max 1000 characters.</mat-hint>
+            <textarea matInput [(ngModel)]="itemValue.query" [formControl]="queryFormControl" [errorStateMatcher]="matcher" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="5"></textarea>  
+            <mat-error *ngIf="queryFormControl.hasError('maxLength')">
+              Content exceeds 1000 characters.
             </mat-error>
           </mat-form-field>
         </div>

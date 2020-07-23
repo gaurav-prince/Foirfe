@@ -29,7 +29,9 @@ import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { environment } from '../environments/environment';
+import { ResourcesPostComponent } from './resources-post/resources-post.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { environment } from '../environments/environment';
     ContactComponent,
     WhatWeDoComponent,
     WhoWeAreComponent,
-    FooterComponent
+    FooterComponent,
+    ResourcesPostComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { environment } from '../environments/environment';
     MatSelectModule,
     MatButtonModule,
     MatTabsModule,
+    MatSnackBarModule,
     RouterModule,
     ReactiveFormsModule,
     WavesModule,

@@ -1,4 +1,94 @@
+@media only screen and (min-width: 768px) {
+  .carousel-inner img {
+      width: 100%;
+      height: 500px;
+    }
+    
+    .row {
+      padding: 5%;
+      // text-decoration: wavy;
+    }
+    .text_details {
+      text-align: justify;
+    }
+  
+    .fontIcon{
+      height: 50px;
+      width: 50px;
+      background-color:black;
+      border-radius: 15px;
+    }
+    
+    // .bg-img {
+    //   // background-image: url("/assets/images/foirfe_transparent.png");
+    //   // background-blend-mode: overlay;
+      
+    //   min-height      : 100%;
+    //   position             : relative;
+    //   opacity              : 0.99;
+    //   background-attachment: fixed;
+    //   background-position  : center;
+    //   background-repeat    : no-repeat;
+    //   background-size      : cover;
+    // }
 
+    .image {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .owl-carousel {
+      width: 90% !important;
+      margin: 10% auto;
+    }
+    
+    .owl-carousel .owl-nav {
+      overflow: hidden;
+      height: 0px;
+    }
+    
+    .owl-carousel .nav-btn {
+      height: 47px;
+      position: absolute;
+      width: 26px;
+      cursor: pointer;
+      top: 30% !important;
+    }
+    
+    .owl-carousel .owl-prev.disabled,
+    .owl-carousel .owl-next.disabled {
+      pointer-events: none;
+      opacity: 0.2;
+    }
+    
+    .owl-carousel .prev-slide {
+      // background: url(./assets/images/nav-icon.png) no-repeat scroll 0 0;
+      left: -33px;
+    }
+    
+    .owl-carousel .next-slide {
+      // background: url(./assets/images/nav-icon.png) no-repeat scroll -24px 0px;
+      right: -33px;
+    }
+    
+    .owl-carousel .prev-slide:hover {
+      background-position: 0px -53px;
+    }
+    
+    .owl-carousel .next-slide:hover {
+      background-position: -24px -53px;
+    }
+    #slider .carousel-item {
+      height: 500px;
+    }
+    
+    .carousel-caption {
+      font-size: 18px;
+    }
+    
+    .carousel-item>img {
+      width: 100%;
+    }
+  }
 
 .foirfe-img1,
 .foirfe-img2 {
@@ -16,7 +106,7 @@
 }
 
 .foirfe-img2 {
-  background-image: url("/assets/images/tech-background.jpg");
+  background-image: url("/assets/images/foirfe.svg");
   min-height      : 400px;
 }
 

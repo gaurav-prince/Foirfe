@@ -24,6 +24,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 // MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
+import { OwlModule } from 'ngx-owl-carousel';
 // import { MDCTextField } from '@material/textfield';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -64,6 +65,7 @@ import { ResourcesPostComponent } from './resources-post/resources-post.componen
     WavesModule,
     ButtonsModule,
     IconsModule,
+    OwlModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],

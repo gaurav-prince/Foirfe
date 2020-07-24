@@ -19,6 +19,16 @@
       border-radius: 15px;
     }
     
+    .information {
+      padding: 0% !important;
+      // background-color: #777;
+      border-radius: 2%;
+      padding-top: 2%;
+    }
+
+    .details-info {
+      text-align: justify;
+    }
     // .bg-img {
     //   // background-image: url("/assets/images/foirfe_transparent.png");
     //   // background-blend-mode: overlay;
@@ -33,9 +43,27 @@
     // }
 
     .image {
+      width: 67%;
+      height: 25%;
+      text-align: center;
+      padding-top: 3%;
+      padding-left: 33%;
+
+    }
+    .customer-text {
+      font-size: 32px;
+      text-align: center;
+      text-decoration: dotted;
+      // font-style: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .own-image {
       max-width: 100px;
       max-height: 100px;
+      padding-left: 10%;
     }
+
     .owl-carousel {
       width: 90% !important;
       margin: 10% auto;
@@ -151,9 +179,13 @@
   background-size    : cover;
 }
 
-div {
-  display            : block;
-  // background-color: ;
+// div {
+//   display            : block;
+//   // background-color: ;
+// }
+
+.card {
+  text-align: center;
 }
 
 // body, html {

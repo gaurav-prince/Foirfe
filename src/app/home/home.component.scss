@@ -20,14 +20,26 @@
     }
     
     .information {
-      padding: 0% !important;
+      padding: 1% !important;
       // background-color: #777;
       border-radius: 2%;
-      padding-top: 2%;
     }
 
     .details-info {
       text-align: justify;
+    }
+
+    .designation {
+      text-transform: capitalize;
+      font: outline;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: -2%;
+    }
+    .name {
+      text-decoration: italic;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      padding: -5%;
     }
     // .bg-img {
     //   // background-image: url("/assets/images/foirfe_transparent.png");

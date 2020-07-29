@@ -6,9 +6,14 @@ body {
     height: 100%;
 }
 
+body a {
+    color: #4a3795;
+}
+
 body {
-    margin     : 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin          : 0;
+    font-family     : Roboto, "Helvetica Neue", sans-serif;
+    background-color: #eff7e5;
 }
 
 .toolbar-padding {
@@ -16,8 +21,14 @@ body {
     height     : 100%;
 }
 
+.toolbar-padding-background {
+    background-image : url("/assets/images/foirfe_bg.png");
+    background-repeat: no-repeat;
+    background-size  : cover;
+}
+
 a.ff-link:hover {
-    color          : #3583a1 !important;
+    color          : #4a3795 !important;
     text-decoration: none;
     font-weight    : bold;
 }

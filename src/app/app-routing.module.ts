@@ -15,11 +15,11 @@ const routerOptions: ExtraOptions = {
 };
 
 const routes: Routes = [
-  { path: '', component: WhoWeAreComponent },
+  { path: '', component: HomeComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'what', component: WhatWeDoComponent },
-  { path: 'about', component: HomeComponent },
+  { path: 'about', component: WhoWeAreComponent },
   { path: 'resources/:id', component: ResourcesPostComponent }
 ];
 

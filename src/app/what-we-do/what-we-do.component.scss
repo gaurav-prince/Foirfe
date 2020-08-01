@@ -12,6 +12,12 @@
     text-align: justify;
   }
 
+  .bullets {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
   .bg-img {
     // background-image: url("/assets/images/foirfe_transparent.png");
     // background-blend-mode: overlay;
@@ -34,6 +40,7 @@
   
   .carousel-item>img {
     width: 100%;
+    padding-top: 1%;
   }
   .fontIcon{
     height: 50px;

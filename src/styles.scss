@@ -13,7 +13,9 @@ body a {
 body {
     margin          : 0;
     font-family     : Roboto, "Helvetica Neue", sans-serif;
-    background-color: #eff7e5;
+    // background-color: #eff7e5;
+    // background-image: linear-gradient(-90deg, #512a91, #53b690);
+    // opacity: 90%;
 }
 
 .toolbar-padding {
@@ -22,7 +24,7 @@ body {
 }
 
 .toolbar-padding-background {
-    background-image : url("/assets/images/foirfe_bg.png");
+    background-image : url("/assets/images/foirfe.svg");
     background-repeat: no-repeat;
     background-size  : cover;
 }

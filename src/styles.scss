@@ -33,9 +33,9 @@ body {
 }
 
 .toolbar-padding-background {
-    background-image : url("/assets/images/foirfe.svg");
+    background-image : linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089), url("/assets/images/foirfe.svg");
     background-repeat: no-repeat;
-    background-size  : cover;
+    background-size  : cover, cover;
 }
 
 a.ff-link:hover {

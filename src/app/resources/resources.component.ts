@@ -11,6 +11,7 @@ import { map } from 'rxjs/operators';
 export class ResourcesComponent implements OnInit {
 
   resourcesPosts: any;
+  latestPost:any;
 
   constructor(public db: AngularFireDatabase) {
   }

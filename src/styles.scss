@@ -7,7 +7,7 @@ body {
 }
 
 body a {
-    color: #4a3795;
+    color: #9bc440;
 }
 
 body {
@@ -39,9 +39,9 @@ body {
 }
 
 a.ff-link:hover {
-    color          : #4a3795 !important;
     text-decoration: none;
     font-weight    : bold;
+    text-shadow: 0 0 3px #4a3795;
 }
 
 .white-text {

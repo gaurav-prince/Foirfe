@@ -18,11 +18,11 @@
           <div class="card-body d-flex flex-column align-items-start">
             <strong class="d-inline-block mb-2 text-success" style="text-transform: uppercase;">{{post.category}}</strong>
             <h3 class="mb-0">
-              <a class="text-white" href="#">{{post.title}}</a>
+              <a class="text-white" [routerLink]="['/resources', post.key]">{{post.title}}</a>
             </h3>
             <div class="mb-1 text-info">{{post.timestamp}}</div>
-            <p class="card-text mb-auto">{{post.htmltext}}</p>
-            <a href="#">Continue reading</a>
+            <div class="card-text mb-auto" [innerHTML]="post.htmltext"></div>
+            <a [routerLink]="['/resources', post.key]">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
             alt="Thumbnail [200x250]" style="width: 200px; height: 250px;"

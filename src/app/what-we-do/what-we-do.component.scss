@@ -24,6 +24,11 @@
     border-radius: 5%;
   }
 
+  .text_details h4{
+    opacity: 90%;
+    color: #a4e6db;
+    font-size: 20px;
+  }
   .link {
     color: rgb(155,196,63);
   }
@@ -268,20 +273,13 @@
     opacity: 90%;
     // color: white;
     font-size: small;
-    padding: 10%;
+    // padding-top: 10%;
     border-radius: 5%;
   }
   
   .text_details h4{
-    // background-image: linear-gradient(-90deg, #11797d, #3a4892);
-    // max-width: 90%;
-    // padding-left:10%;
     opacity: 90%;
     color: #43abdb;
-    // color: white;
-    // font-size: small;
-    // padding: 10%;
-    // border-radius: 5%;
   }
 
   .link {

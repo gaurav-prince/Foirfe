@@ -248,3 +248,64 @@
   padding-top: 10%;
   // bottom: ;
 }
+
+@media only screen and (max-width: 768px) {
+  .foirfe-text-section {
+    color           : #555;
+    background-color: white;
+    text-align      : center;
+    padding         : 10px 10px;
+    text-align      : justify;
+  }
+  
+  .foirfe-text-section p {
+    text-align    : justify;
+    // letter-spacing: 5px;
+    // text-transform: uppercase;
+    font          : 12px "Lato", sans-serif;
+    // color         : #111;
+  }
+
+  .foirfe-img2 {
+    background-image: url("/assets/images/foirfe.svg");
+    min-height      : 150px;
+  }
+
+  .foirfe-text-section h3 {
+    text-align    : center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font          : 14px "Lato", sans-serif;
+    color         : #111;
+  }
+
+  .information {
+    padding: 1% !important;
+    // background-color: #777;
+    border-radius: 2%;
+    background-image: linear-gradient(-90deg, #11797d, #3a4892);
+    color           : rgb(233, 235, 235);
+  }
+
+  .own-image {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 3%;
+    // padding-left: 5%;
+  }
+
+  .img-div {
+    text-align: center;
+    display:inline-block;
+    position: relative;
+    float: none;
+  }
+  .details-info {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .info {
+    padding-top: 6%;
+  }
+}

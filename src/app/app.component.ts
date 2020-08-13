@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     }
   ];
   activeLink = '';
+  showFiller = false;
 
   // mySlideImages = ['../assets/images/aa','../assets/images/image2.jpeg','../assets/images/image3.jpg'];
   // myCarouselImages =['../assets/images/image1.jpg','../assets/images/image2.jpeg','../assets/images/image3.jpg'];

@@ -1,34 +1,70 @@
-<mat-toolbar color = "primary" role="heading" class="nav">
-  <span class="nav-title">
-    <a routerLink="/"  class="ff-link" (click)="activeLink = ''">
-      <img src="/assets/images/Foirfe-online.jpg" alt="">
-    </a>
-  </span>
-  <span class="example-spacer"></span>
-  <span *ngIf="!mobile">
-    <span class="nav-items">
-      <a routerLink="/what"  class="ff-link">What We Do?</a>
+<mat-drawer-container class="example-container" autosize  [hasBackdrop]="true">
+  <mat-toolbar color="primary" role="heading" class="nav">
+    <span *ngIf="!mobile" class="nav-title">
+      <a routerLink="/" class="ff-link" (click)="activeLink = ''">
+        <img src="/assets/images/Foirfe-online.jpg" alt="">
+      </a>
     </span>
-    <span class="nav-items">
-      <a routerLink="/about"  class="ff-link">Who We Are?</a>
+    <span *ngIf="!mobile" class="example-spacer"></span>
+    <span *ngIf="!mobile">
+      <span class="nav-items">
+        <a routerLink="/what" class="ff-link">What We Do?</a>
+      </span>
+      <span class="nav-items">
+        <a routerLink="/about" class="ff-link">Who We Are?</a>
+      </span>
+      <span class="nav-items">
+        <a routerLink="/resources" class="ff-link">Resources</a>
+      </span>
+      <span class="nav-items">
+        <a routerLink="/contact" class="ff-link">Contact Us</a>
+      </span>
     </span>
-    <span class="nav-items">
-      <a routerLink="/resources"  class="ff-link">Resources</a>
-    </span>
-    <span class="nav-items">
-      <a routerLink="/contact" class="ff-link">Contact Us</a>
-    </span>
-  </span>
-</mat-toolbar>
+    <mat-toolbar-row *ngIf="mobile" class="mobile-toolbar" >
+      <span class="col-md-2" (click)="drawer.toggle()">
+        <svg viewBox="0 0 100 80" width="30" height="30" class="icon-svg">
+          <rect width="100" height="18"></rect>
+          <rect y="30" width="100" height="18"></rect>
+          <rect y="60" width="100" height="18"></rect>
+        </svg>
+      </span>
+      <span class="nav-title nav-title-mobile col-md-8">
+        <a routerLink="/" >
+          <img src="/assets/images/Foirfe-online.jpg" alt="">
+        </a>
+      </span>
+      <span class="col-md-2"></span>
+  </mat-toolbar-row>
+    
+  </mat-toolbar>
 
-<nav mat-tab-nav-bar mat-stretch-tabs *ngIf="mobile" class="nav-tabs">
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="side-nav-item" (click)="drawer.toggle()">
+      <a routerLink="/" >Home</a>
+    </div>
+    <div class="side-nav-item" (click)="drawer.toggle()">
+      <a routerLink="/what" >What We Do?</a>
+    </div>
+    <div class="side-nav-item" (click)="drawer.toggle()">
+      <a routerLink="/about" >Who We Are?</a>
+    </div>
+    <div class="side-nav-item" (click)="drawer.toggle()">
+      <a routerLink="/resources" >Resources</a>
+    </div>
+    <div class="side-nav-item" (click)="drawer.toggle()">
+      <a routerLink="/contact" >Contact Us</a>
+    </div>
+  </mat-drawer>
+
+<!-- <nav mat-tab-nav-bar mat-stretch-tabs *ngIf="mobile" class="nav-tabs">
   <a mat-tab-link *ngFor="let link of links"
      (click)="activeLink = link.link"
      routerLinkActive #rla="routerLinkActive"
      [active]="activeLink == link.link" [routerLink]="link.link">
      {{link.text}}
-     <!-- <mat-icon aria-hidden="false">supervisor_account</mat-icon>
-     <div *ngIf="activeLink == link.link">{{link.text}}</div> -->
+     <mat-icon aria-hidden="false">supervisor_account</mat-icon>
+     <div *ngIf="activeLink == link.link">{{link.text}}</div> 
     </a>
-</nav>
+</nav> -->
 <router-outlet></router-outlet>
+</mat-drawer-container>

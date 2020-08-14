@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     }
   ];
   activeLink = '';
+  showFiller = false;
 
   mobileQuery: MediaQueryList;
 

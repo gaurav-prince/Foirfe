@@ -7,12 +7,13 @@ body {
 }
 
 body a {
-    color: #9bc440;
+    color: rgba(255, 255, 255, 0.726);
 }
 
 body {
     margin          : 0;
     font-family     : Roboto, "Helvetica Neue", sans-serif;
+    background-size      : cover;
     // background-color: #eff7e5;
     background-image: linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089) !important;
     // 
@@ -27,15 +28,19 @@ body {
     // opacity: 90%;
 }
 
+html {
+    background-image: linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089) !important;
+}
 .toolbar-padding {
     padding-top: 64px;
     height     : 100%;
+    background-image : linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089);
 }
 
 .toolbar-padding-background {
-    background-image : linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089), url("/assets/images/foirfe.svg");
+    background-image : linear-gradient(-90deg,  #e5eaf5,  #d0bdf4, #a28089);
     background-repeat: no-repeat;
-    background-size  : cover, cover;
+    background-size  : cover;
 }
 
 a.ff-link:hover {
@@ -50,6 +55,6 @@ a.ff-link:hover {
 
 @media only screen and (max-width: 768px) {
     .toolbar-padding {
-        padding-top: 104px;
+        padding-top: 90px;
     }
 }

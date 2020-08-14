@@ -68,9 +68,10 @@ import { ResourcesPostComponent } from './resources-post/resources-post.componen
     AngularFireDatabaseModule
   ],
   providers: [],
-  bootstrap: [AppComponent, WhatWeDoComponent, WhoWeAreComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 
 }
 
+//, WhatWeDoComponent, WhoWeAreComponent

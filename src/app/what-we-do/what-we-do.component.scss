@@ -199,6 +199,29 @@
     background: transparent;
   }
 
+  .text-block {
+    // transform: translate(-40%, -10%);
+    top: 90% !important;
+    left: 82% !important;
+    position: absolute;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(155, 196, 63);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // text-transform: uppercase;
+    text-align: justify;
+    transform: translate(-60%, -60%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 53%;
+    left: 60%;
+    opacity: 0.8;
+    border-radius: 5%;
+    background-image: linear-gradient(-90deg, #11797d, #3a4892);
+  }
+
   .image-div svg{
     display: block;
     margin-left: auto;
@@ -280,9 +303,34 @@
   .text_details h4{
     opacity: 90%;
     color: #43abdb;
+    font-weight: bold;
+    padding-top: 2%;
   }
 
   .link {
     color: rgb(155,196,63);
+  }
+
+  .text-block {
+    // transform: translate(-40%, -10%);
+    top: 80% !important;
+    left: 72% !important;
+    position: absolute;
+    font-size: smaller;
+    font-weight: bolder;
+    color: rgb(155, 196, 63);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // text-transform: uppercase;
+    text-align: justify;
+    transform: translate(-60%, -60%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 53%;
+    left: 60%;
+    opacity: 0.8;
+    border-radius: 5%;
+    background-image: linear-gradient(-90deg, #11797d, #3a4892);
   }
 }

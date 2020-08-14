@@ -73,21 +73,4 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  images = [
-    {
-      text: "Everfresh Flowers",
-      image: "/assets/icons/rocket.png"
-    },
-    {
-      text: "Festive Deer",
-      image: "/assets/icons/values.png"
-    },
-    {
-      text: "Morning Greens",
-      image: "/assets/icons/vision.png"
-    }
-  ]
-  Images = ['./assets/icons/vision.png', './assets/icons/values.png', './assets/icons/rocket.png'];  
-  
-  SlideOptions = { items: 1, dots: true, nav: true };  
 }

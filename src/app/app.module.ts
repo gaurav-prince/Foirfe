@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatListModule} from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,11 +22,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { RouterModule, Router } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
-// MDB Angular Free
 import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
 import { OwlModule } from 'ngx-owl-carousel';
-// import { MDCTextField } from '@material/textfield';
-
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FooterComponent } from './footer/footer.component';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -66,6 +63,7 @@ import { ResourcesPostComponent } from './resources-post/resources-post.componen
     ButtonsModule,
     IconsModule,
     OwlModule,
+    MatListModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],

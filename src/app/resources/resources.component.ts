@@ -12,6 +12,7 @@ export class ResourcesComponent implements OnInit {
 
   resourcesPosts: any;
   latestPost:any;
+  showBusy:boolean=true;
 
   constructor(public db: AngularFireDatabase) {
   }
@@ -28,8 +29,9 @@ export class ResourcesComponent implements OnInit {
         )
       )
     ).subscribe(resources => {
+      this.showBusy=false;
+      this.latestPost = resources.pop();
       this.resourcesPosts = resources;
-      console.log(this.resourcesPosts);
     });
   }
 }

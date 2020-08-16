@@ -1,13 +1,11 @@
-<!-- <body data-gr-c-s-loaded="true"> -->
-<div class="toolbar-padding toolbar-padding-background">
+<div class="toolbar-padding">
   <div class="container">
 
-    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" *ngIf="latestPost">
       <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic">Title of a longer featured blog post Latest</h1>
-        <p class="lead my-3">Multiple lines of text that form the featured post, informing new readers quickly and
-          efficiently about what's most interesting in this post's contents.</p>
-        <p class="lead mb-0"><a routerLink="/resources/abc" class="text-white font-weight-bold">Continue reading...</a>
+        <h1 class="display-4 font-italic">{{latestPost.title}}</h1>
+        <p class="lead my-3" [innerHTML]="latestPost.htmltext"></p>
+        <p class="lead mb-0"><a [routerLink]="['/resources', latestPost.key]" class="text-white font-weight-bold">Continue reading...</a>
         </p>
       </div>
     </div>
@@ -16,7 +14,8 @@
       <div class="col-md-6" *ngFor="let post of resourcesPosts">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-success" style="text-transform: uppercase;">{{post.category}}</strong>
+            <strong class="d-inline-block mb-2 text-success"
+              style="text-transform: uppercase;">{{post.category}}</strong>
             <h3 class="mb-0">
               <a class="text-white" [routerLink]="['/resources', post.key]">{{post.title}}</a>
             </h3>
@@ -30,72 +29,10 @@
             data-holder-rendered="true">
         </div>
       </div>
-      <!-- <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-success">Product</strong>
-            <h3 class="mb-0">
-              <a class="text-white" href="#">Post title</a>
-            </h3>
-            <div class="mb-1 text-info">Nov 11</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
-            <a href="#">Continue reading</a>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-            alt="Thumbnail [200x250]"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_172ae5b3438%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_172ae5b3438%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true" style="width: 200px; height: 250px;">
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-secondary">Training</strong>
-            <h3 class="mb-0">
-              <a class="text-white" href="#">Featured post</a>
-            </h3>
-            <div class="mb-1 text-info">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
-            <a href="#">Continue reading</a>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-            alt="Thumbnail [200x250]" style="width: 200px; height: 250px;"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_172ae5b3432%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_172ae5b3432%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-info">Support</strong>
-            <h3 class="mb-0">
-              <a class="text-white" href="#">Post title</a>
-            </h3>
-            <div class="mb-1 text-info">Nov 11</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
-            <a href="#">Continue reading</a>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
-            alt="Thumbnail [200x250]"
-            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_172ae5b3438%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_172ae5b3438%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-            data-holder-rendered="true" style="width: 200px; height: 250px;">
-        </div>
-      </div> -->
     </div>
   </div>
 
-  <!-- /.blog-main -->
-
   <aside class="col-md-6 blog-sidebar">
-    <!-- <div class="card p-3 mb-3 bg-light rounded">
-      <h4 class="font-italic">About</h4>
-      <p class="mb-0">This page is for Blog Posts, which contain latest udpates from the company, Foirfe.</p>
-    </div> -->
 
     <div class="p-3">
       <h4 class="font-italic">Archives</h4>
@@ -114,26 +51,7 @@
         <li><a href="#">April 2013</a></li>
       </ol>
     </div>
-  </aside><!-- /.blog-sidebar -->
-
-  <!-- </div>/.row -->
-
-  <!-- /.container -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="../../assets/js/vendor/popper.min.js"></script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/vendor/holder.min.js"></script>
-  <script>
-    Holder.addTheme('thumb', {
-      bg: '#55595c',
-      fg: '#eceeef',
-      text: 'Thumbnail'
-    });
-  </script>
-
+  </aside>
 
   <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none"
     style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
@@ -142,5 +60,10 @@
     </defs><text x="0" y="13"
       style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text>
   </svg>
+
+  
+<div class="loader-container" *ngIf="showBusy">
+  <div class="loader"></div>
+</div>
   <app-footer></app-footer>
 </div>

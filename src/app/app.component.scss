@@ -3,12 +3,12 @@
 }
 
 .nav {
-    z-index         : 1;
-    background-color: #fff;
+    z-index            : 1;
+    background-color   : #fff;
     // background-image: linear-gradient(-90deg, #11797d, #3a4892);
     // color           : white;
-    position        : fixed;
-    min-height: 80px;
+    position           : fixed;
+    min-height         : 80px;
     // box-shadow: 0px 0px 30px #ccc;
 }
 
@@ -30,18 +30,22 @@
     color         : rgba(74, 72, 80, 0.575)
 }
 
+.nav-items a:hover {
+    color: #4a3795
+}
+
 
 .nav-tabs a {
-    font-size     : 12px;
-    font-family   : "Lato", sans-serif;
-    text-transform: uppercase;
+    font-size      : 12px;
+    font-family    : "Lato", sans-serif;
+    text-transform : uppercase;
     text-decoration: none;
     // display: block
 }
 
 .nav-title img {
-    max-width : 75px;
-    min-height: 75px;
+    max-width   : 75px;
+    min-height  : 75px;
     padding-left: 5%;
 }
 
@@ -50,63 +54,63 @@
     background-color: #fff;
     position        : fixed;
     z-index         : 1;
-    width: 100%;
+    width           : 100%;
 }
 
-.nav-title-mobile{
+.nav-title-mobile {
     // margin: auto;
     padding: 0px;
 }
 
-.mobile-toolbar{
-    padding-top: 0.5rem;
-    padding-left: 0rem;
+.mobile-toolbar {
+    padding-top  : 0.5rem;
+    padding-left : 0rem;
     padding-right: 0rem;
 }
 
-.icon-svg rect{
+.icon-svg rect {
     // fill:rgb(15, 114, 145);
-    fill:#11797d
+    fill: #11797d
 }
 
-.side-nav-item{
-    text-transform: uppercase;
+.side-nav-item {
+    text-transform  : uppercase;
     background-image: linear-gradient(-90deg, #11797d, #3a4892);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-weight: bold;
-    border: 1px solid #ccc;
+    padding-top     : 1rem;
+    padding-bottom  : 1rem;
+    padding-left    : 1.5rem;
+    padding-right   : 1.5rem;
+    font-weight     : bold;
+    border          : 1px solid #ccc;
 }
 
-.side-nav-item a{
+.side-nav-item a {
     color: #fff !important;
 }
 
-.example-sidenav{
+.example-sidenav {
     // padding-top: 1rem;
     background-image: linear-gradient(-90deg, #11797d, #3a4892);
 }
 
 @media only screen and (max-width: 768px) {
     .toolbar-padding {
-     padding-top: 0px !important;   
+        padding-top: 0px !important;
     }
 
-    .nav-title a{
-        font-size: 15px;
+    .nav-title a {
+        font-size        : 15px;
         // color    : #fff;
-        padding-left: 1rem;
-        letter-spacing: 5px;
+        padding-left     : 1rem;
+        letter-spacing   : 5px;
         // text-transform: uppercase;
-        font          : 15px "Algreya", sans-serif;
+        font             : 15px "Algreya", sans-serif;
         // color         : #111;
-        color : rgba(74, 72, 80, 0.575)
+        color            : rgba(74, 72, 80, 0.575)
     }
-    
+
     .nav-items a {
-        font-size: 12px;
+        font-size     : 12px;
         // padding  : 5%;
         text-transform: uppercase;
         font          : 12px "Lato", sans-serif;
@@ -119,31 +123,31 @@
     }
 
     .example-container {
-        display: flex;
+        display       : flex;
         flex-direction: column;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        position      : absolute;
+        top           : 0;
+        bottom        : 0;
+        left          : 0;
+        right         : 0;
     }
-    
+
     .example-is-mobile .example-toolbar {
         position: fixed;
         /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-        z-index: 2;
+        z-index : 2;
     }
-    
+
     h1.example-app-name {
         margin-left: 8px;
     }
-    
+
     .example-sidenav-container {
         /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
         causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
         flex: 1;
     }
-    
+
     .example-is-mobile .example-sidenav-container {
         /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
         `<body>` to be our scrolling element for mobile layouts. */

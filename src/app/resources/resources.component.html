@@ -5,7 +5,8 @@
       <div class="col-md-6 px-0">
         <h1 class="display-4 font-italic">{{latestPost.title}}</h1>
         <p class="lead my-3" [innerHTML]="latestPost.htmltext"></p>
-        <p class="lead mb-0"><a [routerLink]="['/resources', latestPost.key]" class="text-white font-weight-bold">Continue reading...</a>
+        <p class="lead mb-0"><a [routerLink]="['/resources', latestPost.key]"
+            class="text-white font-weight-bold">Continue reading...</a>
         </p>
       </div>
     </div>
@@ -61,9 +62,23 @@
       style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text>
   </svg>
 
-  
-<div class="loader-container" *ngIf="showBusy">
-  <div class="loader"></div>
-</div>
+
+
+  <div class="loader-container" *ngIf="showBusy">
+    <div class="loading-spinner">
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+      <div class='spinner-blade'></div>
+    </div>
+  </div>
   <app-footer></app-footer>
 </div>

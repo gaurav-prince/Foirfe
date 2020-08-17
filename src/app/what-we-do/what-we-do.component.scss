@@ -17,7 +17,7 @@
   .text_details {
     text-align: justify;
     background-image: linear-gradient(-90deg, #11797d, #3a4892);
-    opacity: 90%;
+    // opacity: 90%;
     color: white;
     font-size: medium;
     padding: 2%;
@@ -25,7 +25,7 @@
   }
 
   .text_details h4{
-    opacity: 90%;
+    // opacity: 90%;
     color: #a4e6db;
     font-size: 20px;
   }
@@ -290,16 +290,35 @@
   }
   .text_details {
     text-align: justify;
-    // background-image: linear-gradient(-90deg, #11797d, #3a4892);
+    background-image: linear-gradient(-90deg, #11797d, #3a4892);
     // max-width: 90%;
     // padding-left:10%;
-    opacity: 90%;
-    // color: white;
+    // opacity: 90%;
+    color: white;
     font-size: small;
-    // padding-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     border-radius: 5%;
   }
   
+  .know_more {
+    display: none;
+  }
+  .container{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  // .row .container {
+  //   padding-right: -20px !important;
+  //   // margin-left: -8px !important;
+  // }
   .text_details h4{
     opacity: 90%;
     color: #43abdb;

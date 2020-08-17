@@ -18,15 +18,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.sTitle = this.aTitle[0];
-    var typed = new Typed('#typedText', {
-      strings: ["Simple", "Robust", "Sustainable"],
-      typeSpeed: 80,
-      loop: true,
-      backSpeed: 30,
-      backDelay: 1000,
-      startDelay: 500,
-      showCursor: false
-    });
+    // var typed = new Typed('#typedText', {
+    //   strings: ["Simple", "Robust", "Sustainable"],
+    //   typeSpeed: 80,
+    //   loop: true,
+    //   backSpeed: 30,
+    //   backDelay: 1000,
+    //   startDelay: 500,
+    //   showCursor: false
+    // });
     // this.changeTitle();
   }
 

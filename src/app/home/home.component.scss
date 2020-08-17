@@ -1,131 +1,137 @@
 @media only screen and (min-width: 768px) {
-    .carousel-inner img {
-      width: 100%;
-      height: 500px;
-    }
-    
-    .row {
-      padding: 5%;
-      // text-decoration: wavy;
-    }
-    .text_details {
-      text-align: justify;
-    }
-  
-    .fontIcon{
-      height: 50px;
-      width: 50px;
-      background-color:black;
-      border-radius: 15px;
-    }
-    
-    .information {
-      padding: 1% !important;
-      // background-color: #777;
-      border-radius: 2%;
-      background-image: linear-gradient(-90deg, #11797d, #3a4892);
-      color           : rgb(233, 235, 235);
-    }
+  .carousel-inner img {
+    width : 100%;
+    height: 500px;
+  }
 
-    .info {
-      padding-top: 4%;
-    }
+  .row {
+    padding           : 5%;
+    // text-decoration: wavy;
+  }
 
-    .details-info {
-      text-align: justify;
-    }
+  .text_details {
+    text-align: justify;
+  }
 
-    .designation {
-      text-transform: capitalize;
-      font: outline;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: -5%;
-    }
-    .name {
-      text-decoration: italic;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-weight: bold;
-      padding: -5%;
-    }
-    .bg-img {
-      // background-image: url("/assets/images/foirfe_transparent.png");
-      // background-blend-mode: overlay;
-      
-      min-height      : 100%;
-      position             : relative;
-      opacity              : 0.99;
-      background-attachment: fixed;
-      background-position  : center;
-      background-repeat    : no-repeat;
-      background-size      : cover;
-    }
+  .fontIcon {
+    height          : 50px;
+    width           : 50px;
+    background-color: black;
+    border-radius   : 15px;
+  }
 
-    .image {
-      width: 67%;
-      height: 25%;
-      text-align: center;
-      padding-top: 3%;
-      padding-left: 33%;
+  .information {
+    padding            : 1% !important;
+    // background-color: #777;
+    border-radius      : 2%;
+    background-image   : linear-gradient(-90deg, #11797d, #3a4892);
+    color              : rgb(233, 235, 235);
+  }
 
-    }
-    .customer-text {
-      font-size: 32px;
-      text-align: center;
-      text-decoration: dotted;
-      // font-style: italic;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+  .info {
+    padding-top: 4%;
+  }
 
-    .image1 {
-      max-width: 100%;
-      max-height: 100%;
-      // background-attachment: fixed;
-      background-position  : center;
-      background-repeat    : no-repeat;
-      background-size      : cover;
-      padding-top: -50px;
-    }
-    .own-image {
-      max-width: 120px;
-      max-height: 120px;
-      border-radius: 3%;
-      // padding-left: 5%;
-    }
+  .details-info {
+    text-align: justify;
+  }
 
-    .img-div {
-      text-align: center;
-      display:inline-block;
-      position: relative;
-      float: none;
-    }
-    #slider .carousel-item {
-      height: 500px;
-    }
-    
-    .carousel-caption {
-      font-size: 18px;
-    }
-    
-    .carousel-item>img {
-      width: 100%;
-      padding-top: 1%;
-    }
+  .designation {
+    text-transform: capitalize;
+    font          : outline;
+    font-family   : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding       : -5%;
+  }
+
+  .name {
+    text-decoration: italic;
+    font-family    : Georgia, 'Times New Roman', Times, serif;
+    font-weight    : bold;
+    padding        : -5%;
+  }
+
+  .bg-img {
+    // background-image: url("/assets/images/foirfe_transparent.png");
+    // background-blend-mode: overlay;
+
+    min-height           : 100%;
+    position             : relative;
+    opacity              : 0.99 !important;
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+  }
+
+  .image {
+    width       : 67%;
+    height      : 25%;
+    text-align  : center;
+    padding-top : 3%;
+    padding-left: 33%;
+
+  }
+
+  .customer-text {
+    font-size      : 32px;
+    text-align     : center;
+    text-decoration: dotted;
+    // font-style: italic;
+    font-family    : Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .image1 {
+    max-width               : 100%;
+    max-height              : 100%;
+    // background-attachment: fixed;
+    background-position     : center;
+    background-repeat       : no-repeat;
+    background-size         : cover;
+    padding-top             : -50px;
+  }
+
+  .own-image {
+    max-width      : 120px;
+    max-height     : 120px;
+    border-radius  : 3%;
+    // padding-left: 5%;
+  }
+
+  .img-div {
+    text-align: center;
+    display   : inline-block;
+    position  : relative;
+    float     : none;
+  }
+
+  #slider .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-caption {
+    font-size: 18px;
+  }
+
+  .carousel-item>img {
+    width      : 100%;
+    padding-top: 1%;
+  }
 
   .ct-btn-scroll {
-      width : 49px;
-      height : 49px;
-      position : absolute;
-      bottom: 20%;
-      left: 0;
-      right: 0;
-      // padding: auto;
-      padding-top: 50px;
-      z-index: 9;
-      border-radius: 50%;
-      -webkit-transition : background-color 0.25s ease-in-out;
-      transition : background-color 0.25s ease-in-out;
+    width             : 49px;
+    height            : 49px;
+    position          : absolute;
+    bottom            : 20%;
+    left              : 0;
+    right             : 0;
+    // padding: auto;
+    padding-top       : 50px;
+    z-index           : 9;
+    border-radius     : 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition        : background-color 0.25s ease-in-out;
   }
-  }
+}
 
 .foirfe-img1,
 .foirfe-img2 {
@@ -139,16 +145,20 @@
 
 .foirfe-img1 {
   // background-image: url("/assets/images/foirfe.svg");
-  min-height      : 100%;
+  min-height: 100%;
 }
 
 .foirfe-img2 {
   // background-image: url("/assets/images/foirfe.svg");
-  min-height      : 100px;
+  min-height: 100px;
 }
 
 #heading {
   padding-top: 200%;
+}
+
+.carousal-container {
+  margin-bottom: 1rem;
 }
 
 .caption {
@@ -162,22 +172,22 @@
 
 .caption span.border {
   background-color: #111;
-  color: #fff;
-  padding: 2%;
-  font-size: 150%;
-  letter-spacing: 10%;
+  color           : #fff;
+  padding         : 2%;
+  font-size       : 150%;
+  letter-spacing  : 10%;
 
 }
 
 .caption span {
-  color         : #453290;
-  text-shadow   : 4px 4px 10px #ccc;
-  padding       : 2%;
-  font-size     : 45px;
-  font-weight   : bold;
-  width         : 10rem !important;
-  min-width     : 10rem;
-  max-width     : 10rem;
+  color      : #453290;
+  text-shadow: 4px 4px 10px #ccc;
+  padding    : 2%;
+  font-size  : 45px;
+  font-weight: bold;
+  width      : 10rem !important;
+  min-width  : 10rem;
+  max-width  : 10rem;
 }
 
 .foirfe-logo,
@@ -216,19 +226,19 @@
 }
 
 .foirfe-text-section {
-  color           : #fff;
-  background-image: linear-gradient(-90deg, #11797d, #3a4892);
+  color              : #fff;
+  background-image   : linear-gradient(-90deg, #11797d, #3a4892);
   // background-color: white;
-  text-align      : center;
-  padding         : 50px 80px;
-  text-align      : justify;
+  text-align         : center;
+  padding            : 50px 80px;
+  text-align         : justify;
 }
 
 .foirfe-text-section p {
-  text-align    : justify;
+  text-align       : justify;
   // letter-spacing: 5px;
   // text-transform: uppercase;
-  font          : 16px "Lato", sans-serif;
+  font             : 16px "Lato", sans-serif;
   // color         : #111;
 }
 
@@ -242,11 +252,11 @@
 
 .footer {
   // position:bott;
-  bottom:0px;
-  background-color:pink;
-  width:100%;
-  height: 10rem;
-  padding-top: 10%;
+  bottom          : 0px;
+  background-color: pink;
+  width           : 100%;
+  height          : 10rem;
+  padding-top     : 10%;
   // bottom: ;
 }
 
@@ -258,18 +268,18 @@
     padding         : 10px 10px;
     text-align      : justify;
   }
-  
+
   .foirfe-text-section p {
-    text-align    : justify;
+    text-align       : justify;
     // letter-spacing: 5px;
     // text-transform: uppercase;
-    font          : 12px "Lato", sans-serif;
-    color         : #fff;
+    font             : 12px "Lato", sans-serif;
+    color            : #fff;
   }
 
   .foirfe-img2 {
     // background-image: url("/assets/images/foirfe.svg");
-    min-height      : 80px;
+    min-height: 80px;
   }
 
   .foirfe-text-section h3 {
@@ -281,29 +291,30 @@
   }
 
   .information {
-    padding: 1% !important;
+    padding            : 1% !important;
     // background-color: #777;
-    border-radius: 2%;
-    background-image: linear-gradient(-90deg, #11797d, #3a4892);
-    color           : rgb(233, 235, 235);
+    border-radius      : 2%;
+    background-image   : linear-gradient(-90deg, #11797d, #3a4892);
+    color              : rgb(233, 235, 235);
   }
 
   .own-image {
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 3%;
+    max-width      : 60px;
+    max-height     : 60px;
+    border-radius  : 3%;
     // padding-left: 5%;
   }
 
   .img-div {
     text-align: center;
-    display:inline-block;
-    position: relative;
-    float: none;
+    display   : inline-block;
+    position  : relative;
+    float     : none;
   }
+
   .details-info {
     text-align: justify;
-    font-size: 12px;
+    font-size : 12px;
   }
 
   .info {

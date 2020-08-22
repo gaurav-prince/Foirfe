@@ -30,10 +30,6 @@
     color              : rgb(233, 235, 235);
   }
 
-  .info {
-    padding-top: 4%;
-  }
-
   .details-info {
     text-align: justify;
   }
@@ -162,6 +158,7 @@
   text-align         : center;
   padding            : 1%;
   padding-top        : 2%;
+  margin-top: 1.5rem;
 }
 
 .small-gap {
@@ -247,6 +244,7 @@
   text-align         : center;
   padding            : 50px 80px;
   text-align         : justify;
+  margin-top: 0.25rem;
 }
 
 
@@ -278,6 +276,11 @@
   height          : 10rem;
   padding-top     : 10%;
   // bottom: ;
+}
+
+
+.info {
+  margin-top: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -348,7 +351,4 @@
     font-size : 12px;
   }
 
-  .info {
-    padding-top: 6%;
-  }
 }

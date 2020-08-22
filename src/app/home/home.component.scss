@@ -25,13 +25,9 @@
     // background-color: #777;
     display: flex;
     flex-wrap: wrap;
-    border-radius      : 2%;
+    // border-radius      : 2%;
     background-image   : linear-gradient(-90deg, #11797d, #3a4892);
     color              : rgb(233, 235, 235);
-  }
-
-  .info {
-    padding-top: 4%;
   }
 
   .details-info {
@@ -163,7 +159,7 @@
   text-align         : center;
   padding            : 1%;
   padding-top        : 2%;
-  // text-overflow: ellipsis;
+  margin-top: 1.5rem;
 }
 
 // .small-gap {
@@ -254,6 +250,7 @@
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
+  // margin-top: 0.25rem;
 }
 
 
@@ -294,6 +291,11 @@
   height          : 10rem;
   padding-top     : 10%;
   // bottom: ;
+}
+
+
+.info {
+  margin-top: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -371,7 +373,4 @@
     padding-bottom: 10px;
   }
 
-  .info {
-    padding-top: 6%;
-  }
 }

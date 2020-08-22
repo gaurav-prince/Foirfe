@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {MediaMatcher} from '@angular/cdk/layout';
-import {ChangeDetectorRef, OnDestroy} from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -36,10 +37,10 @@ export class AppComponent implements OnInit {
 
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = Array.from({ length: 50 }, (_, i) => `Nav Item ${i + 1}`);
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private router: Router) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -48,8 +49,10 @@ export class AppComponent implements OnInit {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
-  
+
   ngOnInit(): void {
+    let url = window.location.href;
+    this.activeLink = url.substring(url.lastIndexOf("/") + 1)
     if (window.screen.width <= 768) { // 768px portrait
       this.mobile = true;
     }

@@ -1,9 +1,9 @@
 div, span, p, a{
-  font-family: "Comic Sans MS";
+  font-family        : "Avenir", sans-serif;
 }
 
 h2, h1, h3, h4{
-  font-family: "NewBold";
+  font-family: "AvenirBlack";
 }
 
 // .carousal-container{
@@ -35,7 +35,7 @@ h2, h1, h3, h4{
     background-image: linear-gradient(-90deg, #11797d, #3a4892);
     opacity       : 0.9 !important;
     color: white;
-    font-size: medium;
+    // font-size: medium;
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
@@ -207,19 +207,6 @@ h2, h1, h3, h4{
     transition: all 0.2s linear;
   }
   
-  // .text {
-  //   // color           : rgb(3, 22, 27);
-  //   // background-color: whitesmoke;
-  //   text-align      : justify;
-  //   padding-top: 20px;
-  //   font-size       : 20px;
-  //   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  // }
-  // .heading {
-  //   // color           : rgb(25, 13, 92);\
-  //   font-size       : 24px;
-  //   font-weight: bold;
-  // }
   .image {
     max-width: 100%;
     max-height: 100%;
@@ -247,7 +234,7 @@ h2, h1, h3, h4{
     // text-transform: uppercase;
     text-align: justify;
     transform: translate(-60%, -60%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family        : "Avenir", sans-serif;
     top: 53%;
     left: 60%;
     opacity: 0.8;
@@ -329,7 +316,7 @@ h2, h1, h3, h4{
     // padding-left:10%;
     // opacity: 90%;
     color: white;
-    font-size: small;
+    // font-size: small;
     padding-top: 2%;
     padding-bottom: 2%;
     opacity       : 0.9 !important;
@@ -403,7 +390,7 @@ h2, h1, h3, h4{
     // text-transform: uppercase;
     text-align: justify;
     transform: translate(-60%, -60%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family        : "Avenir", sans-serif;
     top: 53%;
     left: 60%;
     opacity: 0.8;

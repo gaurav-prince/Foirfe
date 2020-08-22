@@ -37,13 +37,11 @@
   .designation {
     text-transform: capitalize;
     font          : outline;
-    font-family   : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding       : -5%;
   }
 
   .name {
     text-decoration: italic;
-    font-family    : Georgia, 'Times New Roman', Times, serif;
     font-weight    : bold;
     padding        : -5%;
   }
@@ -74,8 +72,6 @@
     font-size      : 32px;
     text-align     : center;
     text-decoration: dotted;
-    // font-style: italic;
-    font-family    : Georgia, 'Times New Roman', Times, serif;
   }
 
   .image1 {
@@ -211,21 +207,9 @@
   background-size    : cover;
 }
 
-// div {
-//   display            : block;
-//   // background-color: ;
-// }
-
 .card {
   text-align: center;
 }
-
-// body, html {
-//   height: 100%;
-//   margin: 0;
-//   font: 400 15px/1.8 "Lato", sans-serif;
-//   color: #777;
-// }
 
 * {
   box-sizing: border-box;
@@ -262,7 +246,7 @@
   text-align       : justify;
   // letter-spacing: 5px;
   // text-transform: uppercase;
-  font             : 16px "Lato", sans-serif;
+  font             : 16px "Avenir", sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
@@ -273,7 +257,7 @@
   text-align    : center;
   letter-spacing: 5px;
   text-transform: uppercase;
-  font          : 20px "Lato", sans-serif;
+  font          : 20px "Avenir", sans-serif;
   // color         : #fff;
   color: #a4e6db;
   white-space: nowrap;
@@ -311,7 +295,7 @@
     text-align       : justify;
     // letter-spacing: 5px;
     // text-transform: uppercase;
-    font             : 14px "Lato", sans-serif;
+    font             : 14px "Avenir", sans-serif;
     color            : #fff;
   }
 
@@ -324,7 +308,7 @@
     text-align    : center;
     letter-spacing: 5px;
     // text-transform: uppercase;
-    font          : 14px "Lato", sans-serif;
+    font          : 14px "Avenir", sans-serif;
     // color         : #fff;
     color: #a4e6db;
     border: 2px solid #fff;

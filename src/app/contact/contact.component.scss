@@ -19,11 +19,50 @@
         padding-top   : 5%;
     }
 
+
+    p {
+        text-align    : center;
+        // letter-spacing: 5px;
+        // text-transform: uppercase;
+        font          : 18px "Lato", sans-serif;
+        font-weight   : bold;
+        // color         : rgba(0, 49, 156, 0.575);
+        // padding-top   : 5%;
+        padding: 2%;
+        padding-bottom: 3%;
+    }
+
+    a:hover {
+        color: grey;
+    }
+
+    a {
+        color: lightskyblue;
+    }
+
+    .fill_gap {
+        min-height: 40px;
+    }
+    .contact_us {
+        background-image: linear-gradient(-90deg, #11797d, #3a4892);
+        opacity       : 0.9 !important;
+        color: white;
+    }
+
+    .fill_gap2 {
+        min-height: 100px;
+    }
+
     .form {
         text-align    : center;
         color         : #111;
         font-size     : medium;
-        // padding-top: 10%;
+    }
+
+    app-footer {
+        position: relative;
+        height: 100%;
+        width: 100%;
     }
 
     .container {
@@ -74,6 +113,41 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    
+    p {
+        text-align    : justify;
+        // letter-spacing: 5px;
+        // text-transform: uppercase;
+        font          : 14px "Lato", sans-serif;
+        // font-weight   : bold;
+        // color         : rgba(0, 49, 156, 0.575);
+        // padding-top   : 5%;
+        padding: 2%;
+        padding-bottom: 3%;
+    }
+
+    a:hover {
+        color: grey;
+    }
+
+    a {
+        color: lightskyblue;
+    }
+
+    .fill_gap {
+        min-height: 20px;
+    }
+    .contact_us {
+        background-image: linear-gradient(-90deg, #11797d, #3a4892);
+        opacity       : 0.9 !important;
+        color: white;
+    }
+
+    .fill_gap2 {
+        min-height: 100px;
+    }
+
     .middle {
         width       : 90%;
         position    : relative;
@@ -105,6 +179,7 @@
         text-align    : center;
         letter-spacing: 5px;
         text-transform: uppercase;
+        font-weight   : bold;
         font          : 15px "Lato", sans-serif;
         color         : rgba(0, 49, 156, 0.575);
         padding-top   : 10%;

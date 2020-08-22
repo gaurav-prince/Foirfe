@@ -7,3 +7,13 @@
     font-family: "NewBold";
     src: url("./NewBold.woff");
   }
+  
+  @font-face {
+    font-family: "Avenir";
+    src: url("./Avenir.woff");
+  }
+  
+  @font-face {
+    font-family: "AvenirBlack";
+    src: url("./Avenir-Black.woff");
+  }

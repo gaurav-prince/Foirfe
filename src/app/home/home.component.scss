@@ -226,8 +226,7 @@
   padding-bottom     : 1% !important;
   text-align         : justify;
   font-size          : 20px;
-  font-weight        : bold;
-  font-style         : italic;
+  // font-style         : italic;
   // padding-bottom: 1%;
   // margin-top: 0.25rem;
 }
@@ -243,8 +242,7 @@
   // text-transform: uppercase;
   font             : 16px "Avenir", sans-serif;
   font-size        : 20px;
-  font-weight      : bold;
-  font-style       : italic;
+  // font-style       : italic;
   // color         : #111;
 }
 
@@ -259,6 +257,7 @@
   padding       : 1%;
   margin        : 0px;
   overflow      : visible;
+  font-weight        : bold;
 }
 
 .footer {

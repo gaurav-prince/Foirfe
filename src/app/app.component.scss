@@ -2,6 +2,12 @@
     flex: 1 1 auto;
 }
 
+.text-logo {
+    color:rgb(74, 55,149);
+    margin-top: 3%;
+    font: 18px "Avenir", sans-serif;
+    font-style: italic;
+}
 .nav {
     z-index         : 1;
     background-color: #fff;
@@ -98,6 +104,13 @@
 @media only screen and (max-width: 768px) {
     .toolbar-padding {
         padding-top: 0px !important;
+    }
+
+    .text-logo {
+        color:rgb(74, 55,149);
+        margin-top: 10%;
+        font: 14px "Avenir", sans-serif;
+        font-style: italic;
     }
 
     .nav-title a {

@@ -1,0 +1,11 @@
+<div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <!-- <button >
+        <i class="material-icons md-36" (click)="scrollToTop()">
+            arrow_circle_up
+        </i>
+    </button> -->
+
+    <button mat-fab (click)="scrollToTop()" color="primary">
+        <mat-icon>arrow_circle_up</mat-icon>
+    </button>
+</div>

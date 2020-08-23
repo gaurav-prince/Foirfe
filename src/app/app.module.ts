@@ -30,6 +30,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { environment } from '../environments/environment';
 import { ResourcesPostComponent } from './resources-post/resources-post.component';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ResourcesPostComponent } from './resources-post/resources-post.componen
     WhatWeDoComponent,
     WhoWeAreComponent,
     FooterComponent,
-    ResourcesPostComponent
+    ResourcesPostComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,

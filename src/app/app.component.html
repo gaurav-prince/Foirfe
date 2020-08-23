@@ -5,7 +5,11 @@
         <img src="/assets/images/Foirfe-online.jpg" alt="">
       </a>
     </span>
-    <span class="example-spacer"></span>
+    <span class="text-logo">
+      <p>   ...cemented by Science</p>
+    </span>
+    <span class="example-spacer">
+    </span>
     <span *ngIf="!mobile">
       <span class="nav-items">
         <a routerLink="/" class="ff-link" [class.activeLink]="activeLink===''" (click)="activeLink = ''">Home</a>
@@ -14,7 +18,7 @@
         <a routerLink="/what" class="ff-link" [class.activeLink]="activeLink==='what'" (click)="activeLink = 'what'">What We Do?</a>
       </span>
       <span class="nav-items">
-        <a routerLink="/about" class="ff-link" [class.activeLink]="activeLink==='about'" (click)="activeLink = 'about'">Who We Are?</a>
+        <a routerLink="/about" class="ff-link" [class.activeLink]="activeLink==='about'" (click)="activeLink = 'about'">Mission, Vision, Values</a>
       </span>
       <span class="nav-items">
         <a routerLink="/resources" class="ff-link" [class.activeLink]="activeLink==='resources'" (click)="activeLink = 'resources'">Resources</a>
@@ -55,7 +59,7 @@
       <a routerLink="/what" (click)="activeLink = 'what'">What We Do?</a>
     </div>
     <div class="side-nav-item" [class.activeLink]="activeLink==='about'" (click)="drawer.toggle()">
-      <a routerLink="/about" (click)="activeLink = 'about'">Who We Are?</a>
+      <a routerLink="/about" (click)="activeLink = 'about'">Mission, Vision, Values</a>
     </div>
     <div class="side-nav-item" [class.activeLink]="activeLink==='resources'" (click)="drawer.toggle()">
       <a routerLink="/resources" (click)="activeLink = 'resources'">Resources</a>

@@ -101,6 +101,11 @@
     background-image: linear-gradient(-90deg, #11797d, #3a4892);
 }
 
+.text-logo p{
+    // margin: 0px;
+    margin-bottom: -4px;
+}
+
 @media only screen and (max-width: 768px) {
     .toolbar-padding {
         padding-top: 0px !important;

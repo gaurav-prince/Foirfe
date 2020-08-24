@@ -31,6 +31,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { environment } from '../environments/environment';
 import { ResourcesPostComponent } from './resources-post/resources-post.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
+import { ResourcesListComponent } from './resources-list/resources-list.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
     WhoWeAreComponent,
     FooterComponent,
     ResourcesPostComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    ResourcesListComponent
   ],
   imports: [
     BrowserModule,

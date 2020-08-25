@@ -66,8 +66,8 @@ export class ResourcesComponent implements OnInit {
     ).subscribe(resources => {
       this.showBusy = false;
       this.setCategoryResources(resources);
-      this.latestPost = resources.pop();
-      this.resourcesPosts = resources;
+      // this.latestPost = resources.pop();
+      // this.resourcesPosts = resources;
     });
   }
 
@@ -77,7 +77,7 @@ export class ResourcesComponent implements OnInit {
         return res.category===category.categoryKey;
       });
       if(resFound){
-        category.firstResourceContent=resFound.htmltext;
+        category.firstResourceContent=resFound.text.substring(0,100);
         category.firstResourceTitle=resFound.title;
       }
     });

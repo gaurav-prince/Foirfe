@@ -21,7 +21,7 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "product.png"
+      resourceIcon: "product_new.png"
     },
     {
       categoryName: "Process",
@@ -29,7 +29,7 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "process.png"
+      resourceIcon: "process_new.png"
     },
     {
       categoryName: "Training",
@@ -37,7 +37,7 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "training.png"
+      resourceIcon: "training_new.png"
     },
     {
       categoryName: "Support",
@@ -45,7 +45,7 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "support.png"
+      resourceIcon: "support_new.png"
     }
   ]
 

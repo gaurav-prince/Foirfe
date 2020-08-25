@@ -29,6 +29,15 @@ background-color: rgba(153, 153, 153, 0.3);
 }
 
 @media only screen and (max-width: 768px) {
+    .card-img-right {
+        display: none;
+    }
+
+    .col-sm-6 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
     .card-container{
         margin-top: 2rem;
         margin-left: 0rem;

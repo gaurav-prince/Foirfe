@@ -11,8 +11,43 @@ import { map } from 'rxjs/operators';
 export class ResourcesComponent implements OnInit {
 
   resourcesPosts: any;
-  latestPost:any;
-  showBusy:boolean=true;
+  latestPost: any;
+  showBusy: boolean = true;
+
+  categoryData: any = [
+    {
+      categoryName: "Product",
+      categoryKey: "product",
+      firstResourceTitle: "",
+      firstResourceContent: "",
+      resourceCount: 2,
+      resourceIcon: "product.png"
+    },
+    {
+      categoryName: "Process",
+      categoryKey: "process",
+      firstResourceTitle: "",
+      firstResourceContent: "",
+      resourceCount: 2,
+      resourceIcon: "process.png"
+    },
+    {
+      categoryName: "Training",
+      categoryKey: "training",
+      firstResourceTitle: "",
+      firstResourceContent: "",
+      resourceCount: 2,
+      resourceIcon: "training.png"
+    },
+    {
+      categoryName: "Support",
+      categoryKey: "support",
+      firstResourceTitle: "",
+      firstResourceContent: "",
+      resourceCount: 2,
+      resourceIcon: "support.png"
+    }
+  ]
 
   constructor(public db: AngularFireDatabase) {
   }
@@ -29,9 +64,22 @@ export class ResourcesComponent implements OnInit {
         )
       )
     ).subscribe(resources => {
-      this.showBusy=false;
+      this.showBusy = false;
+      this.setCategoryResources(resources);
       this.latestPost = resources.pop();
       this.resourcesPosts = resources;
+    });
+  }
+
+  setCategoryResources(resouces: any): void {
+    this.categoryData.forEach(category => {
+      let resFound=resouces.find((res) => {
+        return res.category===category.categoryKey;
+      });
+      if(resFound){
+        category.firstResourceContent=resFound.htmltext;
+        category.firstResourceTitle=resFound.title;
+      }
     });
   }
 }

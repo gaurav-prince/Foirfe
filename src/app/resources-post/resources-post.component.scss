@@ -1,4 +1,64 @@
 .blog-post{
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
+    // padding-left: 100px;
+    padding: 3%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    background-image: linear-gradient(-90deg, #11797d, #3a4892);
+}
+
+.main {
+    // background-image: linear-gradient(-90deg, #11797d, #3a4892);
+    background-image : linear-gradient(-90deg, #e5eaf5, #d0bdf4, #a28089);
+    // border-radius: 2%;
+    margin-top: 6%;
+}
+
+.blog-post-meta {
+    font          : 16px "Avenir", sans-serif;
+    color:#75b5c5;
+}
+
+.blog-post-title {
+    font          : 28px "Avenir", sans-serif;
+    font-weight: bold;
+    color         : #a4e6db;
+}
+
+.blog-post-detail {
+    padding-top: 1%;
+    font          : 18px "Avenir", sans-serif;
+    color:white;
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-post-title {
+        font          : 24px "Avenir", sans-serif;
+        font-weight: bold;
+        color         : #a4e6db;
+    }
+
+    .blog-post{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-left: 30px;
+        background-image: linear-gradient(-90deg, #11797d, #3a4892);
+    }
+
+    .main {
+        background-image : linear-gradient(-90deg, #e5eaf5, #d0bdf4, #a28089);
+        // border-radius: 2%;
+        margin-top: 9%;
+    }
+
+    .blog-post-detail {
+        font          : 16px "Avenir", sans-serif;
+        color:white;
+    }
+
+    .blog-post-meta {
+        font          : 14px "Avenir", sans-serif;
+        color:#75b5c5;
+    }
 }

@@ -10,7 +10,7 @@
         </div>
       </div> -->
 
-        <div class="col-md-6 box" *ngFor="let post of resourcesPosts">
+        <div class="col-md-6 col-sm-8" *ngFor="let post of resourcesPosts">
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
                 <div class="card-body d-flex flex-column align-items-start">
                     <strong class="d-inline-block mb-2 text-success"
@@ -19,7 +19,7 @@
                         <a class="text-white" [routerLink]="['/resources', post.key]">{{post.title}}</a>
                     </h3>
                     <div class="mb-1 text-info">{{post.timestamp}}</div>
-                    <div class="card-text mb-auto detail-text" [innerHTML]="post.htmltext"></div>
+                    <div class="card-text mb-auto" [innerHTML]="post.text"></div>
                     <a [routerLink]="['/resources', post.key]">Continue reading</a>
                 </div>
                 <!-- <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb"
@@ -57,5 +57,5 @@
         </div>
     </div>
     <app-scroll-top></app-scroll-top>
-    <app-footer></app-footer>
+    <app-footer [fixedOnBottom]="true"></app-footer>
 </div>

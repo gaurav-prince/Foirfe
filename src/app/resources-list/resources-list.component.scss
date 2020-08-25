@@ -19,6 +19,7 @@ background-color: rgba(153, 153, 153, 0.3);
     flex-wrap: wrap;
 }
 
+
 div.detail-text {
     // white-space: nowrap;
     overflow: hidden;
@@ -43,6 +44,14 @@ div.detail-text {
         display: inline-block;
        -webkit-line-clamp: 1;
        -webkit-box-orient: vertical;
+    }
+
+    .card-container{
+        margin-top: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        display: flex;
+        flex-wrap: wrap;
     }
     
 }

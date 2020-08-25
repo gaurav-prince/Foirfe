@@ -34,6 +34,11 @@ export class ResourcesListComponent implements OnInit {
       this.resourcesPosts = res.filter((item) => {
         return item['category'] === categoryKey.params.id;
       });
+
+      this.resourcesPosts =this.resourcesPosts.map((item) => {
+        item.text=item.text.substring(0,150);
+        return item; 
+    });
     });
   }
 

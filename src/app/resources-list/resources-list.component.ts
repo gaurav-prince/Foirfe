@@ -32,6 +32,14 @@ export class ResourcesListComponent implements OnInit {
       )
     ).subscribe(res => {
       this.showBusy = false;
+      res.sort(function (a: any, b: any) {
+        if (a.timestamp < b.timestamp)
+          return 1;
+        else if (a.timestamp > b.timestamp)
+          return -1;
+        else
+          return 0;
+      });
       this.resourcesPosts = res.filter((item) => {
         return item['category'] === categoryKey.params.id;
       });

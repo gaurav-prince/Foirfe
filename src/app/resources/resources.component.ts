@@ -69,6 +69,14 @@ export class ResourcesComponent implements OnInit {
       )
     ).subscribe(resources => {
       this.showBusy = false;
+      resources.sort(function (a: any, b: any) {
+        if (a.timestamp < b.timestamp)
+          return 1;
+        else if (a.timestamp > b.timestamp)
+          return -1;
+        else
+          return 0;
+      });
       this.setCategoryResources(resources);
       // this.latestPost = resources.pop();
       // this.resourcesPosts = resources;
@@ -77,8 +85,8 @@ export class ResourcesComponent implements OnInit {
 
   setCategoryResources(resouces: any): void {
     this.categoryData.forEach(category => {
-      let resFound=resouces.find((res) => {
-        return res.category===category.categoryKey;
+      let resFound = resouces.find((res) => {
+        return res.category === category.categoryKey;
       });
       if(resFound){
         category.firstResourceContent=resFound.text.substring(0,100);

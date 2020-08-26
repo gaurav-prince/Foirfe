@@ -28,6 +28,10 @@ background-color: rgba(153, 153, 153, 0.3);
     margin-top: 5%;
 }
 
+a:hover {
+    color: grey;
+}
+
 @media only screen and (max-width: 768px) {
     .card-img-right {
         display: none;

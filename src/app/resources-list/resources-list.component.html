@@ -28,6 +28,13 @@
                     data-holder-rendered="true"> -->
             </div>
         </div>
+
+        <div class="col-md-6 offset-3 noContents rounded" *ngIf="noContents">
+            <h3 class="mb-0">
+                Oops! Nothing to show here. 
+                <a routerLink="/resources">Click Here to Go Back to Resources</a>
+            </h3>
+        </div>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none"

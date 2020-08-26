@@ -6,10 +6,10 @@
         <div class="card-body d-flex flex-column align-items-start">
           <strong class="d-inline-block mb-2 text-success"
             style="text-transform: uppercase;">{{category.categoryName}}</strong>
+            <div class="mb-1 text-info">{{category.firstResourceTimestamp}}</div>
           <h3 class="mb-0">
             <a class="text-white" [routerLink]="['/resourceCategory', category.categoryKey]">{{category.firstResourceTitle?category.firstResourceTitle:"No Resources Published"}}</a>
           </h3>
-          <div class="mb-1 text-info">{{category.timestamp}}</div>
           <div class="card-text mb-auto" [innerHTML]="category.firstResourceContent"></div>
           <a [routerLink]="['/resourceCategory', category.categoryKey]">More...</a>
         </div>

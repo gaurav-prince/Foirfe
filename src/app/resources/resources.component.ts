@@ -21,7 +21,8 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "product_new.png"
+      resourceIcon: "product_new.png",
+      firstResourceTimestamp: ""
     },
     {
       categoryName: "Process",
@@ -29,7 +30,8 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "process_new.png"
+      resourceIcon: "process_new.png",
+      firstResourceTimestamp: ""
     },
     {
       categoryName: "Training",
@@ -37,7 +39,8 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "training_new.png"
+      resourceIcon: "training_new.png",
+      firstResourceTimestamp: ""
     },
     {
       categoryName: "Support",
@@ -45,7 +48,8 @@ export class ResourcesComponent implements OnInit {
       firstResourceTitle: "",
       firstResourceContent: "",
       resourceCount: 2,
-      resourceIcon: "support_new.png"
+      resourceIcon: "support_new.png",
+      firstResourceTimestamp: "",
     }
   ]
 
@@ -79,6 +83,7 @@ export class ResourcesComponent implements OnInit {
       if(resFound){
         category.firstResourceContent=resFound.text.substring(0,100);
         category.firstResourceTitle=resFound.title;
+        category.firstResourceTimestamp=resFound.timestamp;
       }
     });
   }

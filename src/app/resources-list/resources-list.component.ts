@@ -12,6 +12,7 @@ export class ResourcesListComponent implements OnInit {
 
   resourcesPosts: any;
   showBusy: boolean = true;
+  noContents: boolean = true;
 
   constructor(private route: ActivatedRoute, public db: AngularFireDatabase) { }
 
@@ -39,6 +40,9 @@ export class ResourcesListComponent implements OnInit {
         item.text=item.text.substring(0,150);
         return item; 
     });
+    if(this.resourcesPosts.length > 0){
+      this.noContents = false;
+    }
     });
   }
 

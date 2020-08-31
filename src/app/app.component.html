@@ -59,20 +59,20 @@
   </mat-toolbar>
 
   <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
-    <div class="side-nav-item" [class.activeLink]="activeLink===''" (click)="drawer.toggle()">
-      <a routerLink="/" (click)="activeLink = ''">Home</a>
+    <div class="side-nav-item" [class.activeLink]="activeLink===''" routerLink="/" (click)="drawer.toggle()">
+      <a (click)="activeLink = ''">Home</a>
     </div>
-    <div class="side-nav-item" [class.activeLink]="activeLink==='what'" (click)="drawer.toggle()">
-      <a routerLink="/what" (click)="activeLink = 'what'">What We Do?</a>
+    <div class="side-nav-item" [class.activeLink]="activeLink==='what'" routerLink="/what" (click)="drawer.toggle()">
+      <a (click)="activeLink = 'what'">What We Do?</a>
     </div>
-    <div class="side-nav-item" [class.activeLink]="activeLink==='about'" (click)="drawer.toggle()">
-      <a routerLink="/about" (click)="activeLink = 'about'">Mission, Vision & Values</a>
+    <div class="side-nav-item" [class.activeLink]="activeLink==='about'" routerLink="/about" (click)="drawer.toggle()">
+      <a (click)="activeLink = 'about'">Mission, Vision & Values</a>
     </div>
-    <div class="side-nav-item" [class.activeLink]="activeLink==='resources'" (click)="drawer.toggle()">
-      <a routerLink="/resources" (click)="activeLink = 'resources'">Resources</a>
+    <div class="side-nav-item" [class.activeLink]="activeLink==='resources'" routerLink="/resources" (click)="drawer.toggle()">
+      <a (click)="activeLink = 'resources'">Resources</a>
     </div>
-    <div class="side-nav-item" [class.activeLink]="activeLink==='contact'" (click)="drawer.toggle()">
-      <a routerLink="/contact" (click)="activeLink = 'contact'">Contact Us</a>
+    <div class="side-nav-item" [class.activeLink]="activeLink==='contact'" routerLink="/contact" (click)="drawer.toggle()">
+      <a (click)="activeLink = 'contact'">Contact Us</a>
     </div>
   </mat-drawer>
   <router-outlet></router-outlet>
